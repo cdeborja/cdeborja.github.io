@@ -292,8 +292,8 @@ input {
 }
 
 .clients .col-sm-2 {
-	height: 80px;
-	line-height: 80px;
+	height: 140px;
+	line-height: 0px;
 }
 
 /* CONTACT SEPARATOR */
