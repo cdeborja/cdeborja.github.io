@@ -4,4 +4,7 @@ Hey there, welcome to the github holding all the information for my portfolio si
 
 Best,
 Christopher De Borja
+
+Thanks to [blacktie][blacktieco] for the site template.
 [link]: http://www.christopherdeborja.com
+[blacktieco]: http://blacktie.co/
