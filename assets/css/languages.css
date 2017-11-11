@@ -1,0 +1,16 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.skills > .icon-container {
+  min-width: 175px;
+}
+
+.icon-container > i {
+  font-size: 100px;
+  color: #4a86e8;
+}
