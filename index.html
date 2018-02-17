@@ -60,7 +60,11 @@
           </div><!--/col-md-4-->
 
         </div><!--/row-->
-        <a class="resume to-resume" href="assets/img/ChristopherDeBorjaResume.pdf">RESUME</a>
+        <div class="resume-container">
+          <button type="button" data-hover="View" class="button">
+            <a class="resume" href="assets/img/ChristopherDeBorjaResume.pdf">Resume</a>
+          </button>
+        </div>
       </div><!--/container-->
     </div><!--H-->
 
@@ -86,14 +90,26 @@
     <div id="g">
       <div class="container">
         <div class="row centered">
-          <h2>Check out some of my latest works.</h2>
+          <h2>Check out some of my latest works</h2>
           <div class="col-md-8 col-md-offset-2">
-            <p>Here are some of the projects I have created.<br/>Please take a look!</p>
+            <p>Here are some of the projects I have created and helped work on.<br/>Please take a look!</p>
           </div><!--/col-md-8-->
         </div><!--/row-->
       </div><!--/.container-->
     <div class="portfolio-centered mt">
       <div class="recentitems portfolio">
+
+        <div class="portfolio-item graphic-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/portfolio/Influential.png" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Influential Corporate Site</h3>
+                <a href="https://www.influential.co" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i><br/>live</a>
+              </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
 
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
@@ -146,16 +162,20 @@
               <p>JavaScript</p>
             </div>
             <div class="icon-container">
-              <i class="devicon-ruby-plain"></i>
-              <p>Ruby</p>
+              <i class="devicon-elm-plain"></i>
+              <p>Elm</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-coffeescript-plain"></i>
+              <p>CoffeeScript</p>
             </div>
             <div class="icon-container">
               <i class="devicon-react-original"></i>
               <p>React</p>
             </div>
             <div class="icon-container">
-              <i class="devicon-rails-plain"></i>
-              <p>Ruby on Rails</p>
+              <i class="devicon-handlebars-plain"></i>
+              <p>Handlebars</p>
             </div>
             <div class="icon-container">
               <i class="devicon-jquery-plain"></i>
@@ -166,16 +186,44 @@
               <p>CSS</p>
             </div>
             <div class="icon-container">
-              <i class="devicon-git-plain"></i>
-              <p>git</p>
+              <i class="devicon-stylus-original"></i>
+              <p>Stylus</p>
             </div>
             <div class="icon-container">
               <i class="devicon-html5-plain"></i>
               <p>HTML</p>
             </div>
             <div class="icon-container">
+              <i class="devicon-nodejs-plain"></i>
+              <p>Node</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-express-original"></i>
+              <p>Express</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-git-plain"></i>
+              <p>git</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-github-plain"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-ruby-plain"></i>
+              <p>Ruby</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-rails-plain"></i>
+              <p>Ruby on Rails</p>
+            </div>
+            <div class="icon-container">
+              <i class="devicon-mysql-plain"></i>
+              <p>MySQL</p>
+            </div>
+            <div class="icon-container">
               <i class="devicon-postgresql-plain"></i>
-              <p>postgresql</p>
+              <p>PostgreSQL</p>
             </div>
             <div class="icon-container">
               <i class="devicon-atom-original"></i>
@@ -203,7 +251,7 @@
         <div class="row centered">
           <div class="col-md-8 col-md-offset-2">
             <p class="resume">Resources</p>
-            <a class="resume" href="https://docs.google.com/document/d/14_O3MuCKJqHPL6T_r7tgHTHFc0oihrKxLbK0ecAxZmM/edit?usp=sharing">Resume</a><br/>
+            <a class="resume" href="assets/img/ChristopherDeBorjaResume.pdf">Resume</a><br/>
             <a class="resume" href="https://github.com/cdeborja/cdeborja.github.io">Portfolio Github Page</a>
             <p class="email-footer">email: cdeborja@gmail.com</p>
             <a href="http://www.linkedin.com/in/christopherdeborja"><i class="ion-social-linkedin"></i></a>
@@ -268,11 +316,11 @@
       var winWidth = $(window).width(),
       columnNumber = 1;
 
-      if (winWidth > 600) {
-        columnNumber = 3;
+      if (winWidth > 800) {
+        columnNumber = 4;
       } else if (winWidth > 400) {
         columnNumber = 2;
-      } else if (winWidth > 250) {
+      } else if (winWidth > 300) {
         columnNumber = 1;
       }
         return columnNumber;

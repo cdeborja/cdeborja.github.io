@@ -147,7 +147,7 @@ input {
 }
 
 .btn-conf {
-	border-radius: 50px;
+	border-radius: 5px;
 	margin-right: 15px;
 	font-size: 11px;
 	letter-spacing: 1px;
@@ -202,11 +202,12 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
-	padding-top: 5px;
 	background-attachment: relative;
 	background-position: center center;
+	background: url(../img/header.jpg) no-repeat center top;
 	min-height: 750px;
+	padding-top: 5px;
+	position: relative;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -239,6 +240,77 @@ input {
 
 #h i {
 	font-size: 50px;
+}
+
+#h .resume-container {
+	padding: 40px 0;
+}
+
+#h button {
+	background: none;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	overflow: hidden;
+	padding: 14px 28px 13px 28px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+#h button a {
+    -moz-transition-delay: 0.2s;
+    -moz-transition: 0.45s;
+    -o-transition-delay: 0.2s;
+    -o-transition: 0.45s;
+    -webkit-transition-delay: 0.2s;
+    -webkit-transition: 0.45s;
+    transition-delay: 0.2s;
+    transition: 0.45s;
+}
+
+#h button:before,
+#h button:after {
+		font-size: 16px;
+    -moz-transition: .25s,opacity .45s;
+    -o-transition: .25s,opacity .45s;
+    -webkit-transition: .25s,opacity .45s;
+    content: '';
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: .25s,opacity .45s;
+    width: 100%;
+}
+
+#h button:before {
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    -webkit-transform: translate(-150%,0);
+    content: attr(data-hover);
+    transform: translate(-150%,0);
+}
+
+#h button:hover a {
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+    transform: scale(0.3);
+}
+
+#h button:hover:before {
+    -moz-transform: translate(0,0);
+    -moz-transition-delay: .25s;
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    -o-transition-delay: .25s;
+    -webkit-transform: translate(0,0);
+    -webkit-transition-delay: .25s;
+    opacity: 1;
+    transform: translate(0,0);
+    transition-delay: .25s;
 }
 
 /* GREY SECTION */
@@ -402,17 +474,7 @@ input {
 
 .resume {
 	color: #fff;
-	font-size: 20px;
-}
-
-.to-resume {
-	border: 2px solid #fff;
-	padding: 5px 20px;
-	border-radius: 50px;
-}
-
-.to-resume:hover {
-	background-color: #fff;
+	font-size: 16px;
 }
 
 .email-footer {
