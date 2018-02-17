@@ -251,7 +251,6 @@ input {
 	border-radius: 5px;
 	border: 2px solid #fff;
 	overflow: hidden;
-	padding: 14px 28px 13px 28px;
 	position: relative;
 	text-transform: uppercase;
 }
@@ -263,6 +262,7 @@ input {
   -o-transition: 0.45s;
   -webkit-transition-delay: 0.2s;
   -webkit-transition: 0.45s;
+	padding: 14px 28px 13px 28px;
   transition-delay: 0.2s;
   transition: 0.45s;
 }
